@@ -1,0 +1,25 @@
+Adicionando função c++
+
+int fatorial(int num) 
+{
+    if (num == 0) 
+    {
+        return 1; // pois o fatorial de 0 é 1.
+    }
+    else 
+    {
+        return num * fatorial(num - 1); //valor do fatorial de n
+    }
+}
+
+int main()
+{
+    int num = 10;
+    for (int i = 1; i <= num; i++) 
+    {
+        cout << fatorial(i) << " ";
+    }
+  cout << endl;
+
+    return 0;
+}
